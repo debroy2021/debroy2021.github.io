@@ -1,17 +1,17 @@
 import { useState } from "react";
-import Alert from "./components/Alert";
 import Button from "./components/Button";
 
-function App() {
+const App = () => {
   const [alert, setAlert] = useState(false);
   return (
-    <div>
-      {alert && <Alert onClose={() => setAlert(false)}>My alert</Alert>}
-      <Button color="danger" onClick={() => setAlert(true)}>
-        Press Me
-      </Button>
+    <div
+      className="d-flex align-items-center justify-content-center"
+      style={{ height: window.innerHeight }}
+    >
+      <Button onClick={() => setAlert(true)}>Gundu</Button>
+      {alert && <h1>Pontu</h1>}
     </div>
   );
-}
+};
 
 export default App;
