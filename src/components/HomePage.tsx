@@ -75,7 +75,7 @@ const projects: Project[] = [
   },
   {
     label: "software internship",
-    title: "Parabole.ai website and API migration",
+    title: "Parabole.ai",
     meta: "Intern | May 2024 – Aug. 2024",
     points: [
       "Led a team of four interns to migrate the company’s website from Flask to React, improving site responsiveness.",
