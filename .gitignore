@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# My additions
+.DS_Store
+.venv/*
+.env
+.env.*
+!.env.example
