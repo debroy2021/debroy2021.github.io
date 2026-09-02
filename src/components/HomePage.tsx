@@ -284,19 +284,21 @@ export const HomePage = ({ courseNoteGroups }: HomePageProps) => {
                     <li key={point}>{point}</li>
                   ))}
                 </ul>
-                <div
-                  className="tag-list"
-                  aria-label={`${project.title} skills`}
-                >
-                  {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
+                <div className="tags-and-action">
+                  <div
+                    className="tag-list"
+                    aria-label={`${project.title} skills`}
+                  >
+                    {project.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                  {project.routeHref && (
+                    <Link to={project.routeHref} className="project-more-info">
+                      More Info
+                    </Link>
+                  )}
                 </div>
-                {project.routeHref && (
-                  <Link to={project.routeHref} className="project-more-info">
-                    More Info
-                  </Link>
-                )}
               </div>
             </article>
           ))}

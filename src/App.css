@@ -522,19 +522,29 @@ h1 {
   font-weight: 800;
 }
 
+.tags-and-action {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .project-more-info {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
-  margin-top: 12px;
-  padding: 8px 14px;
+  padding: 6px 12px;
   color: #0a4f9c;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   text-decoration: none;
   border: 1.5px solid #0a4f9c;
   border-radius: 6px;
   background: rgba(248, 251, 255, 0.6);
   transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .project-more-info:hover {
